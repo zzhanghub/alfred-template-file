@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="">
+  <a href="https://www.alfredforum.com/topic/18246-new-any-type-of-file-or-folder-directly-or-using-a-template/">
     <img src="icon.png" alt="Logo">
   </a>
 
@@ -40,7 +40,7 @@ Now, it currently works in two ways：
 <!-- USAGE EXAMPLES -->
 ## Usage
 1. **Create directly (with keyword `new`)**
-    * Directly use the specified ***extension*** to create a new file of the corresponding type, e.g., `new filename.docx`. It supports most popular file types, which can be find in `./template_file/`. You can also add some other custom types in the folder by creating an empty template file.
+    * Directly use the specified ***extension*** to create a new file of the corresponding type, e.g., `new filename.docx`. It supports most popular file types, which can be find in `./template_file/`. You can also add some other custom types in the folder.
     ![new-file](./pic/new_file.gif)
 
 
@@ -52,11 +52,11 @@ Now, it currently works in two ways：
 
 
 2. **Create from template (with keyword `tf`)**
-    * Select the template file (like `tf ...`), then enter the filename to create the file.
+    * Select a template file (like `tf ...`), then enter a filename to create the file.
     ![cp-file](./pic/cp_file.gif)
 
 
-    * Select the template folder (can contains files and subfolder), then enter the dirname to create the file
+    * Select a template folder (can contains files and subfolders), then enter a dirname to create the folder.
     ![cp-dir](./pic/cp_dir.gif)
 
 
@@ -65,6 +65,6 @@ Now, it currently works in two ways：
 * Set the search scope of the `tf` keyword so that it can find the target template faster.
 ![set_scope](./pic/scope_setting.jpg)
 
-* Following [真不瓤来](https://space.bilibili.com/184678848) in Bilibili for more interesting tools.
+* Follow [真不瓤来](https://space.bilibili.com/184678848) in Bilibili for more interesting tools.
 
 
