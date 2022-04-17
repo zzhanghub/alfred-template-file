@@ -40,7 +40,7 @@ Now, it currently works in two ways：
 <!-- USAGE EXAMPLES -->
 ## Usage
 1. **Create directly (with keyword `new`)**
-    * Directly use the specified ***extension*** to create a new file of the corresponding type, e.g., `new filename.docx`. It supports most popular file types, which can be found in `./template_file/`. You can also add some other custom types in the folder.
+    * Directly use the specified ***extension*** to create a new file of the corresponding type, e.g., `new filename.docx`. It supports popular file types, which can be found in `./template_file/`. You can also add some other custom types in the folder.
     ![new-file](./pic/new_file.gif)
 
 
