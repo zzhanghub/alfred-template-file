@@ -21,7 +21,7 @@
 The official repo of the 
 [Template File](http://www.packal.org/workflow/template-file).
 It can help MacOS users easily create any type of file in the active Finder window.
-Now, it currently works in two ways：
+Now, it works in two ways：
 
 1. Create directly (with keyword `new`)
 
