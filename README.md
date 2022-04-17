@@ -20,7 +20,7 @@
 ***
 The official repo of the 
 [Template File](http://www.packal.org/workflow/template-file).
-It can help MacOS users easily create any type of file in the active finder window.
+It can help MacOS users easily create any type of file in the active Finder window.
 Now, it currently works in two ways：
 
 1. Create directly (with keyword `new`)
@@ -40,7 +40,7 @@ Now, it currently works in two ways：
 <!-- USAGE EXAMPLES -->
 ## Usage
 1. **Create directly (with keyword `new`)**
-    * Directly use the specified ***extension*** to create a new file of the corresponding type, e.g., `new filename.docx`. It supports most popular file types, which can be find in `./template_file/`. You can also add some other custom types in the folder.
+    * Directly use the specified ***extension*** to create a new file of the corresponding type, e.g., `new filename.docx`. It supports most popular file types, which can be found in `./template_file/`. You can also add some other custom types in the folder.
     ![new-file](./pic/new_file.gif)
 
 
@@ -51,7 +51,7 @@ Now, it currently works in two ways：
 
 
 
-2. **Create from template (with keyword `tf`)**
+2. **Create from templates (with keyword `tf`)**
     * Select a template file (like `tf ...`), then enter a filename to create the file.
     ![cp-file](./pic/cp_file.gif)
 
