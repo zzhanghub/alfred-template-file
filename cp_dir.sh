@@ -6,7 +6,7 @@
 #######################################
 
 if [[ -z "${out_dir}" ]]; then
-  out_dir=~"/Desktop/"
+  out_dir=${HOME}"/Desktop/"
 fi
 
 out_path="${out_dir}${filename}"

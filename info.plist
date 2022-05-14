@@ -402,9 +402,9 @@ end alfred_script</string>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>subtext</key>
-				<string>test</string>
+				<string></string>
 				<key>text</key>
-				<string>New note title?</string>
+				<string>Title?</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
