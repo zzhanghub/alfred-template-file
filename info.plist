@@ -357,7 +357,7 @@ New any type of file or folder (directly or using a template).</string>
 				<string></string>
 				<key>scopes</key>
 				<array>
-					<string>~/Nutstore/我的坚果云/效率工具/template_file</string>
+					<string>~/Nutstore Files/Nutstore/效率工具/template_file</string>
 				</array>
 				<key>sortmode</key>
 				<integer>0</integer>
@@ -437,31 +437,13 @@ end alfred_script</string>
 				</array>
 				<key>elselabel</key>
 				<string>dir</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>143A6F3B-C101-4A82-AF78-93D787360245</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>in_path</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>712072D2-3D01-4907-93F7-D8F78347F18D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -482,6 +464,26 @@ end alfred_script</string>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>9B4D8C20-4C95-4525-9147-3FF396931667</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>in_path</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>712072D2-3D01-4907-93F7-D8F78347F18D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -575,6 +577,25 @@ end alfred_script</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+	tell application "Finder"
+		set pathList to (POSIX path of (folder of the front window as alias))
+	end tell
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>FD9934CE-D26E-47A0-9DA9-8B9F69846FE1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
@@ -590,25 +611,6 @@ end alfred_script</string>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>87F207A4-8A75-4E86-A991-7E6CF1C5567E</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>applescript</key>
-				<string>on alfred_script(q)
-	tell application "Finder"
-		set pathList to (POSIX path of (folder of the front window as alias))
-	end tell
-end alfred_script</string>
-				<key>cachescript</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.applescript</string>
-			<key>uid</key>
-			<string>FD9934CE-D26E-47A0-9DA9-8B9F69846FE1</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -634,6 +636,8 @@ end alfred_script</string>
 				</array>
 				<key>elselabel</key>
 				<string>dir</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -713,130 +717,132 @@ end alfred_script</string>
 		<key>0B904FB6-EB01-43E8-B3E5-72CD1053733A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>455</integer>
+			<real>455</real>
 			<key>ypos</key>
-			<integer>555</integer>
+			<real>555</real>
 		</dict>
 		<key>143A6F3B-C101-4A82-AF78-93D787360245</key>
 		<dict>
 			<key>xpos</key>
-			<integer>975</integer>
+			<real>975</real>
 			<key>ypos</key>
-			<integer>145</integer>
+			<real>145</real>
 		</dict>
 		<key>32B5759E-E2A8-4467-B3B8-E88377F1E873</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1060</integer>
+			<real>1060</real>
 			<key>ypos</key>
-			<integer>225</integer>
+			<real>225</real>
 		</dict>
 		<key>4C76C9EC-8456-4C54-AE5A-5C83A435F95E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1255</integer>
+			<real>1260</real>
 			<key>ypos</key>
-			<integer>525</integer>
+			<real>525</real>
 		</dict>
 		<key>6B7CB7E9-F331-450D-87CA-81D99C621C7E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>975</integer>
+			<real>975</real>
 			<key>ypos</key>
-			<integer>545</integer>
+			<real>545</real>
 		</dict>
 		<key>6FAC6CBD-B1B4-46F3-9FBB-83CD211E4F09</key>
 		<dict>
 			<key>xpos</key>
-			<integer>745</integer>
+			<real>745</real>
 			<key>ypos</key>
-			<integer>125</integer>
+			<real>125</real>
 		</dict>
 		<key>712072D2-3D01-4907-93F7-D8F78347F18D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>455</integer>
+			<real>455</real>
 			<key>ypos</key>
-			<integer>155</integer>
+			<real>155</real>
 		</dict>
 		<key>87F207A4-8A75-4E86-A991-7E6CF1C5567E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>310</integer>
+			<real>310</real>
 			<key>ypos</key>
-			<integer>525</integer>
+			<real>525</real>
 		</dict>
 		<key>9751D185-092A-424D-83DC-52BCCB1CB4B6</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1060</integer>
+			<real>1060</real>
 			<key>ypos</key>
-			<integer>25</integer>
+			<real>25</real>
 		</dict>
 		<key>976C58B9-7A15-461E-B5D5-1E875877EF96</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1260</integer>
+			<real>1260</real>
 			<key>ypos</key>
-			<integer>120</integer>
+			<real>120</real>
 		</dict>
 		<key>9B4D8C20-4C95-4525-9147-3FF396931667</key>
 		<dict>
 			<key>xpos</key>
-			<integer>895</integer>
+			<real>895</real>
 			<key>ypos</key>
-			<integer>155</integer>
+			<real>155</real>
 		</dict>
 		<key>A38E619A-7FBA-4B65-84A2-05DD212E2584</key>
 		<dict>
 			<key>xpos</key>
-			<integer>305</integer>
+			<real>305</real>
 			<key>ypos</key>
-			<integer>125</integer>
+			<real>125</real>
 		</dict>
 		<key>A5A7C323-0549-484D-B1C5-0EA060552245</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1055</integer>
+			<real>1055</real>
 			<key>ypos</key>
-			<integer>625</integer>
+			<real>625</real>
 		</dict>
 		<key>CE282E36-5078-4A8D-909B-DD38E7209E47</key>
 		<dict>
 			<key>xpos</key>
-			<integer>675</integer>
+			<real>675</real>
 			<key>ypos</key>
-			<integer>155</integer>
+			<real>155</real>
 		</dict>
 		<key>D0DD0197-7CBB-4096-9F94-E64C9A78DABA</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1060</integer>
+			<real>1060</real>
 			<key>ypos</key>
-			<integer>425</integer>
+			<real>425</real>
 		</dict>
 		<key>D494C07A-B36C-41B9-B790-5F8A1967A204</key>
 		<dict>
 			<key>xpos</key>
-			<integer>525</integer>
+			<real>525</real>
 			<key>ypos</key>
-			<integer>125</integer>
+			<real>125</real>
 		</dict>
 		<key>EA31732A-8775-4A2B-A9E0-F00A76F4F9FC</key>
 		<dict>
 			<key>xpos</key>
-			<integer>675</integer>
+			<real>860</real>
 			<key>ypos</key>
-			<integer>555</integer>
+			<real>555</real>
 		</dict>
 		<key>FD9934CE-D26E-47A0-9DA9-8B9F69846FE1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>525</integer>
+			<real>525</real>
 			<key>ypos</key>
-			<integer>525</integer>
+			<real>525</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variables</key>
 	<dict>
 		<key>path</key>
@@ -847,7 +853,7 @@ end alfred_script</string>
 		<string>path</string>
 	</array>
 	<key>version</key>
-	<string>0.1</string>
+	<string>0.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/zzhanghub/alfred-template-file</string>
 </dict>

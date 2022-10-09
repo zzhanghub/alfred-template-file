@@ -30,7 +30,7 @@ Now, it works in two ways：
 <!-- 1. Directly create a folder or any type of empty file.
 2. Create folders or files from template files or folders. -->
 
-
+![interface](./pic/interface.png)
 
 ## Prerequisites
 * macOS
