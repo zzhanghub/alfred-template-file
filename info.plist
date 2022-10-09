@@ -356,9 +356,7 @@ New any type of file or folder (directly or using a template).</string>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>scopes</key>
-				<array>
-					<string>~/Nutstore Files/Nutstore/效率工具/template_file</string>
-				</array>
+				<array/>
 				<key>sortmode</key>
 				<integer>0</integer>
 				<key>subtext</key>
