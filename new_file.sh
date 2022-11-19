@@ -15,7 +15,7 @@ out_path="${out_dir}${filename}"
 if [[ -f "${out_path}" ]]; then
   echo "${filename} already exists"
 else
-  template="./default_templates/${extension}.${extension}" 
+  template="${src_dir}/default_templates/${extension}.${extension}" 
   if [[ -f "${template}" ]]; then
     cp  "${template}" "${out_path}"
     echo "${filename} created in ${out_dir}"

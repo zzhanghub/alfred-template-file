@@ -39,8 +39,11 @@ Now, it works in two ways：
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-1. **Create directly (with keyword `new`)**
-    * Directly use the specified ***extension*** to create a new file of the corresponding type, e.g., `new filename.docx`. It supports popular file types, which can be found in `./template_file/`. You can also add some other custom types in the folder.
+1. **Initialize the workflow (with keyword `new`)**
+    * If you use it for the first time, please 
+    initialize by `opentf`. In the future, you can also open the directory where the template file is saved through this command.
+2. **Create directly (with keyword `new`)**
+    * Directly use the specified ***extension*** to create a new file of the corresponding type, e.g., `new filename.docx`. It supports popular file types, which can be found in `template_file/` (open by `opentf`). You can also add some other custom types in the folder.
     ![new-file](./pic/new_file.gif)
 
 
@@ -51,8 +54,9 @@ Now, it works in two ways：
 
 
 
-2. **Create from templates (with keyword `tf`)**
+3. **Create from templates (with keyword `tf`)**
     * Select a template file (like `tf ...`), then enter a filename to create the file.
+    I recommend you store your files in `your_templates/` (open by `opentf`)
     ![cp-file](./pic/cp_file.gif)
 
 
@@ -62,7 +66,7 @@ Now, it works in two ways：
 
 
 ## Tips
-* Set the search scope of the `tf` keyword so that it can find the target template faster.
+* If you want change the search scope of the `tf` keyword, you can drag new dir here.
 ![set_scope](./pic/scope_setting.jpg)
 
 * Follow [真不瓤来](https://space.bilibili.com/184678848) in Bilibili for more interesting tools.
