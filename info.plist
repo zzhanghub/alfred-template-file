@@ -8,6 +8,19 @@
 	<string>zbrl</string>
 	<key>connections</key>
 	<dict>
+		<key>093FE916-4898-46C0-B1C9-32A18001F9DA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6B7CB7E9-F331-450D-87CA-81D99C621C7E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>0B904FB6-EB01-43E8-B3E5-72CD1053733A</key>
 		<array>
 			<dict>
@@ -270,7 +283,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>6B7CB7E9-F331-450D-87CA-81D99C621C7E</string>
+				<string>093FE916-4898-46C0-B1C9-32A18001F9DA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -444,9 +457,9 @@ open "{query}"</string>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>subtext</key>
-				<string></string>
+				<string>No suffix required</string>
 				<key>text</key>
-				<string>Title?</string>
+				<string>Rename it</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -569,9 +582,9 @@ end alfred_script</string>
 				<key>sortmode</key>
 				<integer>0</integer>
 				<key>subtext</key>
-				<string></string>
+				<string>Type 'opentf' for open the gallery used to save your templates</string>
 				<key>title</key>
-				<string></string>
+				<string>Searching template to create dir or file...</string>
 				<key>types</key>
 				<array/>
 				<key>withspace</key>
@@ -625,16 +638,14 @@ end alfred_script</string>
 				<false/>
 				<key>variables</key>
 				<dict>
-					<key>filename</key>
+					<key>out_dir</key>
 					<string>{query}</string>
-					<key>src_dir</key>
-					<string>{const:alfred_workflow_data}</string>
 				</dict>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>9B4D8C20-4C95-4525-9147-3FF396931667</string>
+			<string>CE282E36-5078-4A8D-909B-DD38E7209E47</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -647,14 +658,16 @@ end alfred_script</string>
 				<false/>
 				<key>variables</key>
 				<dict>
-					<key>out_dir</key>
+					<key>filename</key>
 					<string>{query}</string>
+					<key>src_dir</key>
+					<string>{const:alfred_workflow_data}</string>
 				</dict>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>CE282E36-5078-4A8D-909B-DD38E7209E47</string>
+			<string>9B4D8C20-4C95-4525-9147-3FF396931667</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -742,6 +755,33 @@ end alfred_script</string>
 			<string>FD9934CE-D26E-47A0-9DA9-8B9F69846FE1</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>if [ ! -d "{query}" ]; then
+	mkdir -p "{query}"
+    cp -R "./default_templates" "{query}/"
+    mkdir "{query}/your_templates"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>093FE916-4898-46C0-B1C9-32A18001F9DA</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -841,7 +881,7 @@ end alfred_script</string>
 			<key>config</key>
 			<dict>
 				<key>argument</key>
-				<string></string>
+				<string>{const:alfred_workflow_data}</string>
 				<key>passthroughargument</key>
 				<false/>
 				<key>variables</key>
@@ -894,12 +934,19 @@ end alfred_script</string>
 			<key>ypos</key>
 			<real>280</real>
 		</dict>
+		<key>093FE916-4898-46C0-B1C9-32A18001F9DA</key>
+		<dict>
+			<key>xpos</key>
+			<real>855</real>
+			<key>ypos</key>
+			<real>1225</real>
+		</dict>
 		<key>0B904FB6-EB01-43E8-B3E5-72CD1053733A</key>
 		<dict>
 			<key>xpos</key>
 			<real>365</real>
 			<key>ypos</key>
-			<real>1130</real>
+			<real>1255</real>
 		</dict>
 		<key>143A6F3B-C101-4A82-AF78-93D787360245</key>
 		<dict>
@@ -934,14 +981,14 @@ end alfred_script</string>
 			<key>xpos</key>
 			<real>1360</real>
 			<key>ypos</key>
-			<real>1100</real>
+			<real>1225</real>
 		</dict>
 		<key>6B7CB7E9-F331-450D-87CA-81D99C621C7E</key>
 		<dict>
 			<key>xpos</key>
 			<real>1075</real>
 			<key>ypos</key>
-			<real>1120</real>
+			<real>1245</real>
 		</dict>
 		<key>6FAC6CBD-B1B4-46F3-9FBB-83CD211E4F09</key>
 		<dict>
@@ -962,7 +1009,7 @@ end alfred_script</string>
 			<key>xpos</key>
 			<real>220</real>
 			<key>ypos</key>
-			<real>1100</real>
+			<real>1225</real>
 		</dict>
 		<key>9751D185-092A-424D-83DC-52BCCB1CB4B6</key>
 		<dict>
@@ -1004,7 +1051,7 @@ end alfred_script</string>
 			<key>xpos</key>
 			<real>1155</real>
 			<key>ypos</key>
-			<real>1200</real>
+			<real>1325</real>
 		</dict>
 		<key>CE282E36-5078-4A8D-909B-DD38E7209E47</key>
 		<dict>
@@ -1018,7 +1065,7 @@ end alfred_script</string>
 			<key>xpos</key>
 			<real>1160</real>
 			<key>ypos</key>
-			<real>1000</real>
+			<real>1125</real>
 		</dict>
 		<key>D494C07A-B36C-41B9-B790-5F8A1967A204</key>
 		<dict>
@@ -1037,16 +1084,16 @@ end alfred_script</string>
 		<key>EA31732A-8775-4A2B-A9E0-F00A76F4F9FC</key>
 		<dict>
 			<key>xpos</key>
-			<real>770</real>
+			<real>690</real>
 			<key>ypos</key>
-			<real>1130</real>
+			<real>1255</real>
 		</dict>
 		<key>FD9934CE-D26E-47A0-9DA9-8B9F69846FE1</key>
 		<dict>
 			<key>xpos</key>
 			<real>435</real>
 			<key>ypos</key>
-			<real>1100</real>
+			<real>1225</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -1061,7 +1108,7 @@ end alfred_script</string>
 		<string>path</string>
 	</array>
 	<key>version</key>
-	<string>1.0.0</string>
+	<string>1.1.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/zzhanghub/alfred-template-file</string>
 </dict>
