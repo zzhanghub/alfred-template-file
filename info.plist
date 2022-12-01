@@ -309,9 +309,7 @@
 	<key>createdby</key>
 	<string>zbrl</string>
 	<key>description</key>
-	<string>New any type of file or folder (directly or using a template). 
-New any type of file or folder (directly or using a template).
-New any type of file or folder (directly or using a template).</string>
+	<string>New any type of file or folder (directly or using a template)</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -1108,7 +1106,7 @@ fi</string>
 		<string>path</string>
 	</array>
 	<key>version</key>
-	<string>1.1.0</string>
+	<string>1.1.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/zzhanghub/alfred-template-file</string>
 </dict>
